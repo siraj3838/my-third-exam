@@ -36,11 +36,11 @@
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                     </label>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-black rounded-box w-auto">
-                      <li><a class="text-white text-lg font-medium">Home</a></li>
-                      <li><a class="text-white text-lg font-medium">About Us</a></li>
-                      <li><a class="text-white text-lg font-medium">Shop</a></li>
-                      <li><a class="text-white text-lg font-medium">All Fruits</a></li>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-1 lg:p-2 shadow bg-[#64748b] rounded-box w-auto">
+                      <li><a class="text-white text-sm font-medium">Home</a></li>
+                      <li><a class="text-white text-sm font-medium">About Us</a></li>
+                      <li><a class="text-white text-sm font-medium">Shop</a></li>
+                      <li><a class="text-white text-sm font-medium">All Fruits</a></li>
                     </ul>
                   </div>
                   <img src="images/logo2.png" alt="">
@@ -198,7 +198,210 @@
           </section>
           <!-- this Doorstep Section end -->
     </header>
-    <main></main>
+    <main class="container mx-auto">
+        <!-- this is Deal of the day Section start-->
+        <section class="max-w-screen-xl mx-auto mt-32 md:mt-48 mb-32">
+            <!-- first text and time div -->
+            <div class="flex-col lg:flex-row flex justify-between items-center gap-4 lg:gap-80">
+                <!-- text div -->
+                <div class="space-y-3 lg:space-y-6 px-20 lg:px-0">
+                    <h1 class="text-center text-xl lg:text-left text-[#121212] lg:text-5xl font-extrabold">Deal of the day</h1>
+                        <p class="text-sm lg:text-base text-center lg:text-left">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+                        Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <!-- time div -->
+                <div>
+
+                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl">
+                            <span style="--value:15;"></span>:
+                          </span>
+                          days
+                        </div> 
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl">
+                            <span style="--value:10;"></span>:
+                          </span>
+                          hours
+                        </div> 
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl">
+                            <span style="--value:24;"></span>:
+                          </span>
+                          min
+                        </div> 
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl">
+                            <span style="--value:26;"></span>
+                          </span>
+                          sec
+                        </div>
+                      </div>
+
+                </div>
+            </div>
+            <!-- second card div -->
+            <div class="mx-5 gap-4 lg:mx-0 mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-6">
+                <!-- 1st card -->
+                <div class="border-2 rounded-lg px-10">
+                    <div class="flex justify-center mt-12 mb-12">
+                        <img src="images/fruit6.png" alt="">
+                    </div>
+                    <h3 class="text-center text-2xl font-bold mb-6">12.90$-18.85$</h3>
+                    <hr>
+                    <p class="text-center font-medium mb-6 mt-6">Apples</p>
+                    <!-- this is rating -->
+                    <div class="flex justify-center mb-8">
+                        <div class="rating rating-xs rating-half">
+                            <input type="radio" name="rating-10" class="rating-hidden" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                          </div>
+                    </div>
+                      <!-- details div -->
+                      <li class="list-none flex justify-center mb-12"><a href="#my_modal_8" class="text-[#F85559]">Details</a></li>
+                      
+                       <div class="modal" id="my_modal_8">
+                            <div class="modal-box">
+                               <h3 class="font-bold text-lg">Hello!</h3>
+                               <p class="py-4">This modal works with anchor links</p>
+                               <div class="modal-action">
+                                 <a href="#" class="btn">Yay!</a>
+                               </div>
+                            </div>
+                        </div>
+                </div>
+
+                <!-- 2nd card -->
+                <div class="border-2 rounded-lg px-10">
+                    <div class="flex justify-center mt-12 mb-12">
+                        <img src="images/fruit7.png" alt="">
+                    </div>
+                    <h3 class="text-center text-2xl font-bold mb-6">12.90$-18.85$</h3>
+                    <hr>
+                    <p class="text-center font-medium mb-6 mt-6">Orange</p>
+                    <!-- this is rating -->
+                    <div class="flex justify-center mb-8">
+                        <div class="rating rating-xs rating-half">
+                            <input type="radio" name="rating-10" class="rating-hidden" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                          </div>
+                    </div>
+                      <!-- details div -->
+                      <li class="list-none flex justify-center mb-12"><a href="#my_modal_8" class="text-[#F85559]">Details</a></li>
+                      
+                       <div class="modal" id="my_modal_8">
+                            <div class="modal-box">
+                               <h3 class="font-bold text-lg">Hello!</h3>
+                               <p class="py-4">This modal works with anchor links</p>
+                               <div class="modal-action">
+                                 <a href="#" class="btn">Yay!</a>
+                               </div>
+                            </div>
+                        </div>
+                </div>
+
+                <!-- 3rd card -->
+                <div class="border-2 rounded-lg px-10">
+                    <div class="flex justify-center mt-12 mb-12">
+                        <img src="images/fruit8.png" alt="">
+                    </div>
+                    <h3 class="text-center text-2xl font-bold mb-6">12.90$-18.85$</h3>
+                    <hr>
+                    <p class="text-center font-medium mb-6 mt-6">Red Dragon</p>
+                    <!-- this is rating -->
+                    <div class="flex justify-center mb-8">
+                        <div class="rating rating-xs rating-half">
+                            <input type="radio" name="rating-10" class="rating-hidden" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                          </div>
+                    </div>
+                      <!-- details div -->
+                      <li class="list-none flex justify-center mb-12"><a href="#my_modal_8" class="text-[#F85559]">Details</a></li>
+                      
+                       <div class="modal" id="my_modal_8">
+                            <div class="modal-box">
+                               <h3 class="font-bold text-lg">Hello!</h3>
+                               <p class="py-4">This modal works with anchor links</p>
+                               <div class="modal-action">
+                                 <a href="#" class="btn">Yay!</a>
+                               </div>
+                            </div>
+                        </div>
+                </div>
+
+                <!-- 4th card -->
+                <div class="border-2 rounded-lg px-10">
+                    <div class="flex justify-center mt-12 mb-12">
+                        <img src="images/fruit9.png" alt="">
+                    </div>
+                    <h3 class="text-center text-2xl font-bold mb-6">12.90$-18.85$</h3>
+                    <hr>
+                    <p class="text-center font-medium mb-6 mt-6">Banana</p>
+                    <!-- this is rating -->
+                    <div class="flex justify-center mb-8">
+                        <div class="rating rating-xs rating-half">
+                            <input type="radio" name="rating-10" class="rating-hidden" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                          </div>
+                    </div>
+                      <!-- details div -->
+                      <li class="list-none flex justify-center mb-12"><a href="#my_modal_8" class="text-[#F85559]">Details</a></li>
+                      
+                       <div class="modal" id="my_modal_8">
+                            <div class="modal-box">
+                               <h3 class="font-bold text-lg">Hello!</h3>
+                               <p class="py-4">This modal works with anchor links</p>
+                               <div class="modal-action">
+                                 <a href="#" class="btn">Yay!</a>
+                               </div>
+                            </div>
+                        </div>
+                </div>
+
+            </div>
+            <!-- btn div -->
+            <div></div>
+        </section>
+        <!-- this is Deal of the day Section end-->
+
+    </main>
     
 </body>
 </html>
